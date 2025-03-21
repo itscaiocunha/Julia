@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, MessageCircle, CalendarCheck, Calendar, ArrowRight} from 'lucide-react';
+import { ShieldCheck, MessageCircle, CalendarCheck, Calendar, ArrowRight } from 'lucide-react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -61,7 +61,7 @@ function Saude() {
                 rows={4}
                 className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={formData.question1}
-                onChange={(e) => setFormData({...formData, question1: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, question1: e.target.value })}
                 placeholder="Descreva seu desafio em vendas"
               />
             </div>
@@ -85,7 +85,7 @@ function Saude() {
                 rows={4}
                 className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={formData.question2}
-                onChange={(e) => setFormData({...formData, question1: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, question1: e.target.value })}
                 placeholder="Descreva seu desafio em vendas"
               />
             </div>
@@ -108,7 +108,7 @@ function Saude() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.name}
-                  onChange={(e) => setFormData({...formData, name: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
               </div>
               <div>
@@ -118,7 +118,7 @@ function Saude() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.email}
-                  onChange={(e) => setFormData({...formData, email: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 />
               </div>
               <div>
@@ -128,7 +128,7 @@ function Saude() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.phone}
-                  onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 />
               </div>
               <div>
@@ -138,7 +138,7 @@ function Saude() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.company}
-                  onChange={(e) => setFormData({...formData, company: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                 />
               </div>
               <div>
@@ -148,7 +148,7 @@ function Saude() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.preferredDate}
-                  onChange={(e) => setFormData({...formData, preferredDate: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
                 />
               </div>
               <div>
@@ -158,7 +158,7 @@ function Saude() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.preferredTime}
-                  onChange={(e) => setFormData({...formData, preferredTime: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
                 />
               </div>
             </div>
@@ -196,11 +196,11 @@ function Saude() {
 
 
       {/* CTA + WhatsApp Demo Section */}
-     <section className="container mx-auto px-4 py-16 md:py-24">
+      <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-b from-[#53A361] to-white text-transparent bg-clip-text w-full md:w-[90%] lg:w-[100%]">
-              Agilidade de atendimentos e agendamentos,  para que você possa atender mais. 
+              Agilidade de atendimentos e agendamentos,  para que você possa atender mais.
             </h1>
             <p className="text-xl text-gray-300 mb-8">
               Aumente seus agendamentos de forma personalizada e humanizada. Agende consultas, tire dúvidas e otimize o atendimento do seu consultório!
@@ -227,12 +227,12 @@ function Saude() {
       {/* Video Section */}
       <section className="py-20 bg-gray-900/50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Veja como a JulIA aumenta suas vendas</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">Veja como a Julia aumenta suas vendas</h2>
           <div className="max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden bg-gray-800">
             <iframe
               className="w-full h-full"
               src="https://w7startup.com.br/video/Consultorio.mp4"
-              title="JulIA Demo"
+              title="Julia Demo"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
@@ -241,38 +241,38 @@ function Saude() {
       </section>
 
       {/* Pain Points Section */}
-     <section className="py-20">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-      Como a JulIA transforma o atendimento no seu consultório
-    </h2>
-    <div className="grid md:grid-cols-3 gap-8">
-      {[
-        {
-          icon: <CalendarCheck className="w-8 h-8 text-blue-400" />,
-          title: "Agendamentos automatizados",
-          description: "Evite atrasos e horários vagos. A JulIA gerencia sua agenda, confirma consultas e reduz faltas automaticamente."
-        },
-        {
-          icon: <MessageCircle className="w-8 h-8 text-teal-400" />,
-          title: "Atendimento rápido e eficiente",
-          description: "Responda dúvidas frequentes instantaneamente, oferecendo um atendimento humanizado e sempre disponível."
-        },
-        {
-          icon: <ShieldCheck className="w-8 h-8 text-green-400" />,
-          title: "Segurança e privacidade",
-          description: "A JulIA protege os dados dos seus pacientes e garante um atendimento seguro e sigiloso, conforme as normas da saúde."
-        }
-      ].map((feature, index) => (
-        <div key={index} className="bg-gray-800/50 p-8 rounded-2xl hover:transform hover:-translate-y-1 transition-all">
-          <div className="mb-4">{feature.icon}</div>
-          <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-          <p className="text-gray-400">{feature.description}</p>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            Como a Julia transforma o atendimento no seu consultório
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <CalendarCheck className="w-8 h-8 text-blue-400" />,
+                title: "Agendamentos automatizados",
+                description: "Evite atrasos e horários vagos. A Julia gerencia sua agenda, confirma consultas e reduz faltas automaticamente."
+              },
+              {
+                icon: <MessageCircle className="w-8 h-8 text-teal-400" />,
+                title: "Atendimento rápido e eficiente",
+                description: "Responda dúvidas frequentes instantaneamente, oferecendo um atendimento humanizado e sempre disponível."
+              },
+              {
+                icon: <ShieldCheck className="w-8 h-8 text-green-400" />,
+                title: "Segurança e privacidade",
+                description: "A Julia protege os dados dos seus pacientes e garante um atendimento seguro e sigiloso, conforme as normas da saúde."
+              }
+            ].map((feature, index) => (
+              <div key={index} className="bg-gray-800/50 p-8 rounded-2xl hover:transform hover:-translate-y-1 transition-all">
+                <div className="mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                <p className="text-gray-400">{feature.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
 
       {/* Integrations Section */}
@@ -318,18 +318,18 @@ function Saude() {
       </section>
 
       {/* Test AI Section */}
-     <section id="teste" className="py-20 bg-gray-800/30">
+      <section id="teste" className="py-20 bg-gray-800/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Experimente a JulIA agora mesmo
+              Experimente a Julia agora mesmo
             </h2>
             <p className="text-xl text-gray-300 mb-12">
               Teste nossa IA e veja como ela pode revolucionar seu atendimento
             </p>
             <div className="overflow-hidden rounded-2xl border border-gray-300">
-              <iframe 
-                id="zaia-iframe" 
+              <iframe
+                id="zaia-iframe"
                 src="https://platform.zaia.app/embed/chat/17834"
                 className="w-full h-80"
                 style={{ border: "none" }}
@@ -343,26 +343,26 @@ function Saude() {
       </section>
 
       {/* Schedule Demo Section */}
-            <section id="cadastro" className="py-20 bg-gray-900/50">
-              <div className="container mx-auto px-4 flex flex-col items-center text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Agende um bate-papo para saber mais
-                </h2>
-                <button
-                  className="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full font-medium flex items-center gap-2 transition-colors"
-                  onClick={() => window.open('https://share.hsforms.com/1Ri6wSC_PTlagBdcbA5mLYQblq37', '_blank')}
-                >
-                  <Calendar className="w-5 h-5" /> Marcar reunião
-                </button>
-      
-      
-                {/* <div className="max-w-2xl mx-auto">
+      <section id="cadastro" className="py-20 bg-gray-900/50">
+        <div className="container mx-auto px-4 flex flex-col items-center text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Agende um bate-papo para saber mais
+          </h2>
+          <button
+            className="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full font-medium flex items-center gap-2 transition-colors"
+            onClick={() => window.open('https://share.hsforms.com/1Ri6wSC_PTlagBdcbA5mLYQblq37', '_blank')}
+          >
+            <Calendar className="w-5 h-5" /> Marcar reunião
+          </button>
+
+
+          {/* <div className="max-w-2xl mx-auto">
                   <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
                     Agende uma Demonstração
                   </h2>
                   <div className="bg-gray-800/50 rounded-2xl p-8"> */}
-                    {/* Indicador de progresso */}
-                    {/* <div className="flex justify-between mb-8">
+          {/* Indicador de progresso */}
+          {/* <div className="flex justify-between mb-8">
                       <div className={`flex items-center ${formStep >= 1 ? 'text-blue-500' : 'text-gray-500'}`}>
                         <div
                           className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${
@@ -396,8 +396,8 @@ function Saude() {
                     </div>
                   </div>
                 </div> */}
-              </div>
-            </section>
+        </div>
+      </section>
 
 
       {/* Footer */}
@@ -408,12 +408,12 @@ function Saude() {
               <img className="w-32" src="/images/logo.png" alt="logo Julia" />
             </div>
             <div className="flex items-center gap-2 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-              <a href="https://www.instagram.com/hello.juliabr/">Instagram</a> | 
+              <a href="https://www.instagram.com/hello.juliabr/">Instagram</a> |
               <a href="https://www.linkedin.com/company/hellojulia/">Linkedin</a> |
               <a href="mailto:ola@hellojulia.com.br">E-mail</a>
             </div>
             <p className="text-gray-400 text-sm">
-              © 2025 JulIA. Todos os direitos reservados.
+              © 2025 Julia. Todos os direitos reservados.
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, MessageCircle, CalendarCheck, Calendar, ArrowRight} from 'lucide-react';
+import { ShieldCheck, MessageCircle, CalendarCheck, Calendar, ArrowRight } from 'lucide-react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -50,133 +50,133 @@ function Automobilismo() {
 
   // Renderiza o conteúdo do formulário baseado na etapa atual
   const renderFormStep = () => {
-  switch (formStep) {
-    case 1:
-      return (
-        <form onSubmit={handleQuestionSubmit} className="space-y-6">
-          <div>
-            <label className="block text-xl font-medium mb-4">
-              Qual o maior desafio na gestão do seu estacionamento?
-            </label>
-            <textarea
-              required
-              rows={4}
-              className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={formData.question1}
-              onChange={(e) => setFormData({...formData, question1: e.target.value})}
-              placeholder="Exemplo: dificuldade em controlar vagas, cobrança, segurança..."
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2"
-          >
-            Próxima Pergunta <ArrowRight className="w-5 h-5" />
-          </button>
-        </form>
-      );
-    case 2:
-      return (
-        <form onSubmit={handleQuestionSubmit} className="space-y-6">
-          <div>
-            <label className="block text-xl font-medium mb-4">
-              Quantos veículos passam pelo seu estacionamento diariamente?
-            </label>
-            <input
-              required
-              type="number"
-              className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={formData.dailyTraffic}
-              onChange={(e) => setFormData({...formData, dailyTraffic: e.target.value})}
-              placeholder="Exemplo: 200 veículos por dia"
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2"
-          >
-            Próxima Pergunta <ArrowRight className="w-5 h-5" />
-          </button>
-        </form>
-      );
-    case 3:
-      return (
-        <form onSubmit={handleScheduleSubmit} className="space-y-6">
-          <div className="grid md:grid-cols-2 gap-6">
+    switch (formStep) {
+      case 1:
+        return (
+          <form onSubmit={handleQuestionSubmit} className="space-y-6">
             <div>
-              <label className="block text-sm font-medium mb-2">Nome</label>
-              <input
-                type="text"
+              <label className="block text-xl font-medium mb-4">
+                Qual o maior desafio na gestão do seu estacionamento?
+              </label>
+              <textarea
                 required
+                rows={4}
                 className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                value={formData.name}
-                onChange={(e) => setFormData({...formData, name: e.target.value})}
+                value={formData.question1}
+                onChange={(e) => setFormData({ ...formData, question1: e.target.value })}
+                placeholder="Exemplo: dificuldade em controlar vagas, cobrança, segurança..."
               />
             </div>
+            <button
+              type="submit"
+              className="w-full bg-blue-500 hover:bg-blue-600 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2"
+            >
+              Próxima Pergunta <ArrowRight className="w-5 h-5" />
+            </button>
+          </form>
+        );
+      case 2:
+        return (
+          <form onSubmit={handleQuestionSubmit} className="space-y-6">
             <div>
-              <label className="block text-sm font-medium mb-2">Email</label>
+              <label className="block text-xl font-medium mb-4">
+                Quantos veículos passam pelo seu estacionamento diariamente?
+              </label>
               <input
-                type="email"
                 required
+                type="number"
                 className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                value={formData.email}
-                onChange={(e) => setFormData({...formData, email: e.target.value})}
+                value={formData.dailyTraffic}
+                onChange={(e) => setFormData({ ...formData, dailyTraffic: e.target.value })}
+                placeholder="Exemplo: 200 veículos por dia"
               />
             </div>
-            <div>
-              <label className="block text-sm font-medium mb-2">Telefone</label>
-              <input
-                type="tel"
-                required
-                className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                value={formData.phone}
-                onChange={(e) => setFormData({...formData, phone: e.target.value})}
-              />
+            <button
+              type="submit"
+              className="w-full bg-blue-500 hover:bg-blue-600 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2"
+            >
+              Próxima Pergunta <ArrowRight className="w-5 h-5" />
+            </button>
+          </form>
+        );
+      case 3:
+        return (
+          <form onSubmit={handleScheduleSubmit} className="space-y-6">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-medium mb-2">Nome</label>
+                <input
+                  type="text"
+                  required
+                  className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-2">Email</label>
+                <input
+                  type="email"
+                  required
+                  className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-2">Telefone</label>
+                <input
+                  type="tel"
+                  required
+                  className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  value={formData.phone}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-2">Nome do Estacionamento</label>
+                <input
+                  type="text"
+                  required
+                  className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  value={formData.parkingName}
+                  onChange={(e) => setFormData({ ...formData, parkingName: e.target.value })}
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-2">Data Preferida para Demonstração</label>
+                <input
+                  type="date"
+                  required
+                  className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  value={formData.preferredDate}
+                  onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-2">Horário Preferido</label>
+                <input
+                  type="time"
+                  required
+                  className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  value={formData.preferredTime}
+                  onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
+                />
+              </div>
             </div>
-            <div>
-              <label className="block text-sm font-medium mb-2">Nome do Estacionamento</label>
-              <input
-                type="text"
-                required
-                className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                value={formData.parkingName}
-                onChange={(e) => setFormData({...formData, parkingName: e.target.value})}
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-2">Data Preferida para Demonstração</label>
-              <input
-                type="date"
-                required
-                className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                value={formData.preferredDate}
-                onChange={(e) => setFormData({...formData, preferredDate: e.target.value})}
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-2">Horário Preferido</label>
-              <input
-                type="time"
-                required
-                className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                value={formData.preferredTime}
-                onChange={(e) => setFormData({...formData, preferredTime: e.target.value})}
-              />
-            </div>
-          </div>
-          <button
-            type="submit"
-            className="w-full mt-6 bg-blue-500 hover:bg-blue-600 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2"
-          >
-            Agendar Demonstração
-            <Calendar className="w-5 h-5" />
-          </button>
-        </form>
-      );
-    default:
-      return null;
-  }
-};
+            <button
+              type="submit"
+              className="w-full mt-6 bg-blue-500 hover:bg-blue-600 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2"
+            >
+              Agendar Demonstração
+              <Calendar className="w-5 h-5" />
+            </button>
+          </form>
+        );
+      default:
+        return null;
+    }
+  };
 
 
   return (
@@ -199,30 +199,30 @@ function Automobilismo() {
 
 
       {/* CTA + WhatsApp Demo Section */}
-     <section className="container mx-auto px-4 py-16 md:py-24">
-  <div className="grid md:grid-cols-2 gap-12 items-center">
-    <div>
-      <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-b from-[#595757] to-white text-transparent bg-clip-text w-full md:w-[90%] lg:w-[100%]">
-        Centralize os atendimentos da sua empresa e aumente o fluxo de clientes satisfeitos!
-      </h1>
-      <p className="text-xl text-gray-300 mb-8">
-        Automatize reservas, controle o fluxo de veículos e melhore a experiência dos seus clientes com nossa IA especializada.
-      </p>
-      <div className="flex gap-4">
-        <a href="#teste">
-          <button className="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full text-[24px] text-black font-medium flex items-center gap-2 transition-colors">
-            Testar agora <ArrowRight className="w-5 h-5" />
-          </button>
-        </a>
-      </div>
-    </div>
-    <div className="relative flex justify-center">
-      <div className="absolute -top-4 -left-4 w-24 h-24 bg-blue-500/10 rounded-full blur-xl"></div>
-      <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-purple-500/10 rounded-full blur-xl"></div>
-      <img className="w-full max-w-[800px]" src="/images/Automotivo.png" alt="Conversa de atendimento virtual para academia" />
-    </div>
-  </div>
-</section>
+      <section className="container mx-auto px-4 py-16 md:py-24">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-b from-[#595757] to-white text-transparent bg-clip-text w-full md:w-[90%] lg:w-[100%]">
+              Centralize os atendimentos da sua empresa e aumente o fluxo de clientes satisfeitos!
+            </h1>
+            <p className="text-xl text-gray-300 mb-8">
+              Automatize reservas, controle o fluxo de veículos e melhore a experiência dos seus clientes com nossa IA especializada.
+            </p>
+            <div className="flex gap-4">
+              <a href="#teste">
+                <button className="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full text-[24px] text-black font-medium flex items-center gap-2 transition-colors">
+                  Testar agora <ArrowRight className="w-5 h-5" />
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className="relative flex justify-center">
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-blue-500/10 rounded-full blur-xl"></div>
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-purple-500/10 rounded-full blur-xl"></div>
+            <img className="w-full max-w-[800px]" src="/images/Automotivo.png" alt="Conversa de atendimento virtual para academia" />
+          </div>
+        </div>
+      </section>
 
 
 
@@ -230,12 +230,12 @@ function Automobilismo() {
       {/* Video Section */}
       <section className="py-20 bg-gray-900/50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Veja como a JulIA aumenta suas vendas</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">Veja como a Julia aumenta suas vendas</h2>
           <div className="max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden bg-gray-800">
             <iframe
               className="w-full h-full"
               src="https://w7startup.com.br/video/Oficina.mp4"
-              title="JulIA Demo"
+              title="Julia Demo"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
@@ -244,38 +244,38 @@ function Automobilismo() {
       </section>
 
       {/* Pain Points Section */}
-     <section className="py-20">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-      Como a JulIA otimiza a gestão do seu estacionamento
-    </h2>
-    <div className="grid md:grid-cols-3 gap-8">
-      {[
-        {
-          icon: <CalendarCheck className="w-8 h-8 text-blue-400" />,
-          title: "Reservas automatizadas",
-          description: "Evite vagas ociosas e otimiza a ocupação. A JulIA gerencia reservas e confirma horários automaticamente."
-        },
-        {
-          icon: <MessageCircle className="w-8 h-8 text-teal-400" />,
-          title: "Atendimento rápido e digital",
-          description: "Responda dúvidas frequentes instantaneamente e agilize o atendimento dos clientes sem precisar de uma equipe 24h."
-        },
-        {
-          icon: <ShieldCheck className="w-8 h-8 text-green-400" />,
-          title: "Segurança e controle",
-          description: "A JulIA integra-se ao seu sistema para controlar acessos, garantir segurança e facilitar pagamentos."
-        }
-      ].map((feature, index) => (
-        <div key={index} className="bg-gray-800/50 p-8 rounded-2xl hover:transform hover:-translate-y-1 transition-all">
-          <div className="mb-4">{feature.icon}</div>
-          <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-          <p className="text-gray-400">{feature.description}</p>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            Como a Julia otimiza a gestão do seu estacionamento
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <CalendarCheck className="w-8 h-8 text-blue-400" />,
+                title: "Reservas automatizadas",
+                description: "Evite vagas ociosas e otimiza a ocupação. A Julia gerencia reservas e confirma horários automaticamente."
+              },
+              {
+                icon: <MessageCircle className="w-8 h-8 text-teal-400" />,
+                title: "Atendimento rápido e digital",
+                description: "Responda dúvidas frequentes instantaneamente e agilize o atendimento dos clientes sem precisar de uma equipe 24h."
+              },
+              {
+                icon: <ShieldCheck className="w-8 h-8 text-green-400" />,
+                title: "Segurança e controle",
+                description: "A Julia integra-se ao seu sistema para controlar acessos, garantir segurança e facilitar pagamentos."
+              }
+            ].map((feature, index) => (
+              <div key={index} className="bg-gray-800/50 p-8 rounded-2xl hover:transform hover:-translate-y-1 transition-all">
+                <div className="mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                <p className="text-gray-400">{feature.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
 
 
@@ -322,18 +322,18 @@ function Automobilismo() {
       </section>
 
       {/* Test AI Section */}
-     <section id="teste" className="py-20 bg-gray-800/30">
+      <section id="teste" className="py-20 bg-gray-800/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Experimente a JulIA agora mesmo
+              Experimente a Julia agora mesmo
             </h2>
             <p className="text-xl text-gray-300 mb-12">
               Teste nossa IA e veja como ela pode revolucionar seu atendimento
             </p>
             <div className="overflow-hidden rounded-2xl border border-gray-300">
-              <iframe 
-                id="zaia-iframe" 
+              <iframe
+                id="zaia-iframe"
                 src="https://platform.zaia.app/embed/chat/17834"
                 className="w-full h-80"
                 style={{ border: "none" }}
@@ -365,8 +365,8 @@ function Automobilismo() {
               Agende uma Demonstração
             </h2>
             <div className="bg-gray-800/50 rounded-2xl p-8"> */}
-              {/* Indicador de progresso */}
-              {/* <div className="flex justify-between mb-8">
+          {/* Indicador de progresso */}
+          {/* <div className="flex justify-between mb-8">
                 <div className={`flex items-center ${formStep >= 1 ? 'text-blue-500' : 'text-gray-500'}`}>
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${
@@ -412,12 +412,12 @@ function Automobilismo() {
               <img className="w-32" src="/images/logo.png" alt="logo Julia" />
             </div>
             <div className="flex items-center gap-2 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-              <a href="https://www.instagram.com/hello.juliabr/">Instagram</a> | 
+              <a href="https://www.instagram.com/hello.juliabr/">Instagram</a> |
               <a href="https://www.linkedin.com/company/hellojulia/">Linkedin</a> |
               <a href="mailto:ola@hellojulia.com.br">E-mail</a>
             </div>
             <p className="text-gray-400 text-sm">
-              © 2025 JulIA. Todos os direitos reservados.
+              © 2025 Julia. Todos os direitos reservados.
             </p>
           </div>
         </div>

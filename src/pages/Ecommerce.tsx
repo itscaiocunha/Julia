@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Zap, Shield, MessageSquare, Calendar, ArrowRight} from 'lucide-react';
+import { Zap, Shield, MessageSquare, Calendar, ArrowRight } from 'lucide-react';
 import {
-  Database, Mail, FileText, 
+  Database, Mail, FileText,
   CreditCard, MessageCircle
 } from 'lucide-react';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,18 +10,19 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
-  const integrations = [
-    { img: "/images/logo/Shopify-Logo.png", name: "Shopify", url: "https://www.shopify.com.br/" },
-    { img: "/images/logo/Nuvemshop-Logo.png", name: "Nuvemshop", url: "https://www.nuvemshop.com.br/" },
-    { img: "/images/logo/HubSpot-Logo.png", name: "HubSpot", url: "https://www.hubspot.com/" },
-    { img: "/images/logo/Jadlog-Logo.png", name: "Jadlog", url: "https://www.jadlog.com.br/" },
-    { img: "/images/logo/MercadoPago-Logo.png", name: "Mercado Pago", url: "https://www.mercadopago.com.br/" },
-    { img: "/images/logo/TotalExpress-Logo.png", name: "Total Express", url: "https://www.totalexpress.com.br/" },
-    { img: "/images/logo/PagSeguro-Logo.png", name: "PagSeguro", url: "https://pagseguro.uol.com.br/" },
-    { img: "/images/logo/Salesforce-Logo.png", name: "Salesforce", url: "https://www.salesforce.com/br/" },
-    { img: "/images/logo/PayPal-Logo.png", name: "PayPal", url: "https://www.PayPal.com.br/" },
-    { img: "/images/logo/Bitrix-Logo.png", name: "Bitrix24", url: "https://www.bitrix24.com.br/" }
-  ];
+const integrations = [
+  { img: "/images/logo/Shopify-Logo.png", name: "Shopify", url: "https://www.shopify.com.br/" },
+  { img: "/images/logo/Nuvemshop-Logo.png", name: "Nuvemshop", url: "https://www.nuvemshop.com.br/" },
+  { img: "/images/logo/HubSpot-Logo.png", name: "HubSpot", url: "https://www.hubspot.com/" },
+  { img: "/images/logo/Jadlog-Logo.png", name: "Jadlog", url: "https://www.jadlog.com.br/" },
+  { img: "/images/logo/MercadoPago-Logo.png", name: "Mercado Pago", url: "https://www.mercadopago.com.br/" },
+  { img: "/images/logo/TotalExpress-Logo.png", name: "Total Express", url: "https://www.totalexpress.com.br/" },
+  { img: "/images/logo/PagSeguro-Logo.png", name: "PagSeguro", url: "https://pagseguro.uol.com.br/" },
+  { img: "/images/logo/Salesforce-Logo.png", name: "Salesforce", url: "https://www.salesforce.com/br/" },
+  { img: "/images/logo/PayPal-Logo.png", name: "PayPal", url: "https://www.PayPal.com.br/" },
+  { img: "/images/logo/Bitrix-Logo.png", name: "Bitrix24", url: "https://www.bitrix24.com.br/" },
+  { img: "/images/logo/Tray-Logo.png", name: "Tray", url: "https://tray.com.br/" }
+];
 
 
 function Ecommerce() {
@@ -67,7 +68,7 @@ function Ecommerce() {
                 rows={4}
                 className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={formData.question1}
-                onChange={(e) => setFormData({...formData, question1: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, question1: e.target.value })}
                 placeholder="Descreva seu desafio em vendas"
               />
             </div>
@@ -91,7 +92,7 @@ function Ecommerce() {
                 rows={4}
                 className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={formData.question2}
-                onChange={(e) => setFormData({...formData, question2: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, question2: e.target.value })}
                 placeholder="Descreva o volume de vendas..."
               />
             </div>
@@ -114,7 +115,7 @@ function Ecommerce() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.name}
-                  onChange={(e) => setFormData({...formData, name: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
               </div>
               <div>
@@ -124,7 +125,7 @@ function Ecommerce() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.email}
-                  onChange={(e) => setFormData({...formData, email: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 />
               </div>
               <div>
@@ -134,7 +135,7 @@ function Ecommerce() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.phone}
-                  onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 />
               </div>
               <div>
@@ -144,7 +145,7 @@ function Ecommerce() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.company}
-                  onChange={(e) => setFormData({...formData, company: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                 />
               </div>
               <div>
@@ -154,7 +155,7 @@ function Ecommerce() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.preferredDate}
-                  onChange={(e) => setFormData({...formData, preferredDate: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
                 />
               </div>
               <div>
@@ -164,7 +165,7 @@ function Ecommerce() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.preferredTime}
-                  onChange={(e) => setFormData({...formData, preferredTime: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
                 />
               </div>
             </div>
@@ -202,7 +203,7 @@ function Ecommerce() {
 
 
       {/* CTA + WhatsApp Demo Section */}
-     <section className="container mx-auto px-4 py-16 md:py-24">
+      <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-b from-[#892CDB] to-white text-transparent bg-clip-text">
@@ -231,12 +232,12 @@ function Ecommerce() {
       {/* Video Section */}
       <section className="py-20 bg-gray-900/50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Veja como a JulIA aumenta suas vendas</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">Veja como a Julia aumenta suas vendas</h2>
           <div className="max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden bg-gray-800">
             <iframe
               className="w-full h-full"
               src="https://w7startup.com.br/video/Ecommerce.mp4"
-              title="JulIA Demo"
+              title="Julia Demo"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
@@ -248,14 +249,14 @@ function Ecommerce() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-            Problemas que a JulIA resolve
+            Problemas que a Julia resolve
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 icon: <MessageSquare className="w-8 h-8 text-red-400" />,
                 title: "Vendas 24/7",
-                description: "Perca zero oportunidades de venda! A JulIA atende, qualifica e vende 24 horas por dia, 7 dias por semana."
+                description: "Perca zero oportunidades de venda! A Julia atende, qualifica e vende 24 horas por dia, 7 dias por semana."
               },
               {
                 icon: <Zap className="w-8 h-8 text-yellow-400" />,
@@ -265,7 +266,7 @@ function Ecommerce() {
               {
                 icon: <Shield className="w-8 h-8 text-green-400" />,
                 title: "Vendas Qualificadas",
-                description: "Cada interação é uma oportunidade de venda. A JulIA qualifica leads e fecha negócios automaticamente."
+                description: "Cada interação é uma oportunidade de venda. A Julia qualifica leads e fecha negócios automaticamente."
               }
             ].map((pain, index) => (
               <div key={index} className="bg-gray-800/50 p-8 rounded-2xl hover:transform hover:-translate-y-1 transition-all">
@@ -321,18 +322,18 @@ function Ecommerce() {
       </section>
 
       {/* Test AI Section */}
-     <section id="teste" className="py-20 bg-gray-800/30">
+      <section id="teste" className="py-20 bg-gray-800/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Experimente a JulIA agora mesmo
+              Experimente a Julia agora mesmo
             </h2>
             <p className="text-xl text-gray-300 mb-12">
               Teste nossa IA e veja como ela pode revolucionar seu atendimento
             </p>
             <div className="overflow-hidden rounded-2xl border border-gray-300">
-              <iframe 
-                id="zaia-iframe" 
+              <iframe
+                id="zaia-iframe"
                 src="https://platform.zaia.app/embed/chat/17834"
                 className="w-full h-80"
                 style={{ border: "none" }}
@@ -346,26 +347,26 @@ function Ecommerce() {
       </section>
 
       {/* Schedule Demo Section */}
-            <section id="cadastro" className="py-20 bg-gray-900/50">
-              <div className="container mx-auto px-4 flex flex-col items-center text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Agende um bate-papo para saber mais
-                </h2>
-                <button
-                  className="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full font-medium flex items-center gap-2 transition-colors"
-                  onClick={() => window.open('https://share.hsforms.com/1Q9NyspHxR8GM3g7vw60dUgblq37', '_blank')}
-                >
-                  <Calendar className="w-5 h-5" /> Marcar reunião
-                </button>
-      
-      
-                {/* <div className="max-w-2xl mx-auto">
+      <section id="cadastro" className="py-20 bg-gray-900/50">
+        <div className="container mx-auto px-4 flex flex-col items-center text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Agende um bate-papo para saber mais
+          </h2>
+          <button
+            className="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full font-medium flex items-center gap-2 transition-colors"
+            onClick={() => window.open('https://share.hsforms.com/1Q9NyspHxR8GM3g7vw60dUgblq37', '_blank')}
+          >
+            <Calendar className="w-5 h-5" /> Marcar reunião
+          </button>
+
+
+          {/* <div className="max-w-2xl mx-auto">
                   <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
                     Agende uma Demonstração
                   </h2>
                   <div className="bg-gray-800/50 rounded-2xl p-8"> */}
-                    {/* Indicador de progresso */}
-                    {/* <div className="flex justify-between mb-8">
+          {/* Indicador de progresso */}
+          {/* <div className="flex justify-between mb-8">
                       <div className={`flex items-center ${formStep >= 1 ? 'text-blue-500' : 'text-gray-500'}`}>
                         <div
                           className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${
@@ -399,8 +400,8 @@ function Ecommerce() {
                     </div>
                   </div>
                 </div> */}
-              </div>
-            </section>
+        </div>
+      </section>
 
 
       {/* Footer */}
@@ -411,12 +412,12 @@ function Ecommerce() {
               <img className="w-32" src="/images/logo.png" alt="logo Julia" />
             </div>
             <div className="flex items-center gap-2 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-              <a href="https://www.instagram.com/hello.juliabr/">Instagram</a> | 
+              <a href="https://www.instagram.com/hello.juliabr/">Instagram</a> |
               <a href="https://www.linkedin.com/company/hellojulia/">Linkedin</a> |
               <a href="mailto:ola@hellojulia.com.br">E-mail</a>
             </div>
             <p className="text-gray-400 text-sm">
-              © 2025 JulIA. Todos os direitos reservados.
+              © 2025 Julia. Todos os direitos reservados.
             </p>
           </div>
         </div>

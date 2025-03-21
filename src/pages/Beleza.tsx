@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Star,  MessageCircle, CalendarCheck, Calendar, ArrowRight} from 'lucide-react';
+import { Star, MessageCircle, CalendarCheck, Calendar, ArrowRight } from 'lucide-react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -61,7 +61,7 @@ function Beleza() {
                 rows={4}
                 className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={formData.question1}
-                onChange={(e) => setFormData({...formData, question1: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, question1: e.target.value })}
                 placeholder="Descreva os principais desafios no atendimento do seu salão"
               />
             </div>
@@ -85,7 +85,7 @@ function Beleza() {
                 rows={4}
                 className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={formData.question2}
-                onChange={(e) => setFormData({...formData, question2: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, question2: e.target.value })}
                 placeholder="Informe a média de atendimentos mensais do seu salão"
               />
             </div>
@@ -108,7 +108,7 @@ function Beleza() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.name}
-                  onChange={(e) => setFormData({...formData, name: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
               </div>
               <div>
@@ -118,7 +118,7 @@ function Beleza() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.email}
-                  onChange={(e) => setFormData({...formData, email: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 />
               </div>
               <div>
@@ -128,7 +128,7 @@ function Beleza() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.phone}
-                  onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 />
               </div>
               <div>
@@ -138,7 +138,7 @@ function Beleza() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.company}
-                  onChange={(e) => setFormData({...formData, company: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                 />
               </div>
               <div>
@@ -148,7 +148,7 @@ function Beleza() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.preferredDate}
-                  onChange={(e) => setFormData({...formData, preferredDate: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
                 />
               </div>
               <div>
@@ -158,7 +158,7 @@ function Beleza() {
                   required
                   className="w-full bg-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={formData.preferredTime}
-                  onChange={(e) => setFormData({...formData, preferredTime: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
                 />
               </div>
             </div>
@@ -226,12 +226,12 @@ function Beleza() {
       {/* Video Section */}
       <section className="py-20 bg-gray-900/50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Veja como a JulIA aumenta suas vendas</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">Veja como a Julia aumenta suas vendas</h2>
           <div className="max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden bg-gray-800">
             <iframe
               className="w-full h-full"
               src="https://w7startup.com.br/video/Estética.mp4"
-              title="JulIA Demo"
+              title="Julia Demo"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
@@ -243,14 +243,14 @@ function Beleza() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-            Como a JulIA transforma o atendimento no seu salão de beleza
+            Como a Julia transforma o atendimento no seu salão de beleza
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 icon: <CalendarCheck className="w-8 h-8 text-blue-400" />,
                 title: "Agendamentos sem complicação",
-                description: "Evite horários vagos e atrasos. A JulIA organiza sua agenda, confirma horários e reduz faltas automaticamente."
+                description: "Evite horários vagos e atrasos. A Julia organiza sua agenda, confirma horários e reduz faltas automaticamente."
               },
               {
                 icon: <MessageCircle className="w-8 h-8 text-teal-400" />,
@@ -316,7 +316,7 @@ function Beleza() {
       </section>
 
       {/* Test AI Section */}
-     <section id="teste" className="py-20 bg-gray-800/30">
+      <section id="teste" className="py-20 bg-gray-800/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -326,8 +326,8 @@ function Beleza() {
               Teste nossa IA e veja como ela pode revolucionar seu atendimento
             </p>
             <div className="overflow-hidden rounded-2xl border border-gray-300">
-              <iframe 
-                id="zaia-iframe" 
+              <iframe
+                id="zaia-iframe"
                 src="https://platform.zaia.app/embed/chat/17834"
                 className="w-full h-80"
                 style={{ border: "none" }}
@@ -359,8 +359,8 @@ function Beleza() {
               Agende uma Demonstração
             </h2>
             <div className="bg-gray-800/50 rounded-2xl p-8"> */}
-              {/* Indicador de progresso */}
-              {/* <div className="flex justify-between mb-8">
+          {/* Indicador de progresso */}
+          {/* <div className="flex justify-between mb-8">
                 <div className={`flex items-center ${formStep >= 1 ? 'text-blue-500' : 'text-gray-500'}`}>
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${
@@ -406,12 +406,12 @@ function Beleza() {
               <img className="w-32" src="/images/logo.png" alt="logo Julia" />
             </div>
             <div className="flex items-center gap-2 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-              <a href="https://www.instagram.com/hello.juliabr/">Instagram</a> | 
+              <a href="https://www.instagram.com/hello.juliabr/">Instagram</a> |
               <a href="https://www.linkedin.com/company/hellojulia/">Linkedin</a> |
               <a href="mailto:ola@hellojulia.com.br">E-mail</a>
             </div>
             <p className="text-gray-400 text-sm">
-              © 2025 JulIA. Todos os direitos reservados.
+              © 2025 Julia. Todos os direitos reservados.
             </p>
           </div>
         </div>
